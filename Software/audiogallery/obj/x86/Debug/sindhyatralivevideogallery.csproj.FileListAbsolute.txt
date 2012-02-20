@@ -1,0 +1,20 @@
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.delete.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.login.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.main.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.Properties.Resources.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.upload.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\bin\Debug\MRG.Controls.UI.dll
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.addplaylist.resources
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.editplaylist.resources
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\sindhyatralivevideogallery.deleteplaylist.resources
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\bin\Debug\VIDEO GALLERY.exe.manifest
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\bin\Debug\VIDEO GALLERY.application
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\bin\Debug\VIDEO GALLERY.exe
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\bin\Debug\VIDEO GALLERY.pdb
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\VIDEO GALLERY.exe.manifest
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\VIDEO GALLERY.application
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\VIDEO GALLERY.exe
+C:\Users\robin\documents\visual studio 2010\Projects\sindhyatralivegallery\sindhyatralivevideogallery\obj\x86\Debug\VIDEO GALLERY.pdb

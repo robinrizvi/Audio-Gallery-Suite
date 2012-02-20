@@ -1,0 +1,48 @@
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.addplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.changepassword.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.delete.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.deleteplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.editaudio.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.editplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.login.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.main.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.manageuser.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.Properties.Resources.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\audiogallery.upload.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.application
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\MRG.Controls.UI.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\taglib-sharp.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.application
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.addplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.changepassword.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.delete.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.deleteplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.editaudio.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.editplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.login.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.main.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.manageuser.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.Properties.Resources.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\audiogallery.upload.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\AUDIO GALLERY.application
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\MRG.Controls.UI.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\bin\Debug\taglib-sharp.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\audiogallery\obj\x86\Debug\AUDIO GALLERY.application

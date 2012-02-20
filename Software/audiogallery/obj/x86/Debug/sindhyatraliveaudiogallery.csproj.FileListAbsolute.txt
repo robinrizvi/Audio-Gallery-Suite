@@ -1,0 +1,48 @@
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe.manifest
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.application
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.pdb
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\MRG.Controls.UI.dll
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\bin\Debug\taglib-sharp.dll
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.addplaylist.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.changepassword.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.delete.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.deleteplaylist.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.editaudio.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.editplaylist.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.login.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.main.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.manageuser.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.Properties.Resources.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.upload.resources
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe.manifest
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.application
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe
+C:\Users\robin\Documents\Visual Studio 2010\Projects\sindhyatralivegallery\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.application
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.exe
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\AUDIO GALLERY.pdb
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\MRG.Controls.UI.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\bin\Debug\taglib-sharp.dll
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.addplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.changepassword.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.delete.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.deleteplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.editaudio.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.editplaylist.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.login.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.main.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.manageuser.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.Properties.Resources.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\sindhyatraliveaudiogallery.upload.resources
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.exe.manifest
+C:\Program Files (x86)\EasyPHP-5.3.6.1\www\Audio-Gallery-Suite\Software\sindhyatraliveaudiogallery\obj\x86\Debug\AUDIO GALLERY.application
