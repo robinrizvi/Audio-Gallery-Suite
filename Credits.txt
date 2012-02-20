@@ -35,3 +35,7 @@ http://freepsdfiles.net/print-templates/psd-poster-template-for-club-event/
 > Skin
 Per Sandstrom (http://www.helloper.com/)
 https://github.com/persand/jPlayer-skins
+
+> Royalty free music
+http://incompetech.com
+http://incompetech.com/m/c/royalty-free/
