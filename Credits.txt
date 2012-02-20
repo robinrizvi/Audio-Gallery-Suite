@@ -1,0 +1,37 @@
+I would like to give credits and thanks :
+
+> Jquery
+John Resig (http://ejohn.org)
+http://jquery.com/
+
+> Jplayer
+Happyworm (http://www.happyworm.com/)
+http://jplayer.org/
+
+> JscrollPane
+Kelvin Luck (http://www.kelvinluck.com)
+http://jscrollpane.kelvinluck.com/
+
+> jquery-animate-css-rotate-scale
+Zachary Johnson (http://www.zachstronaut.com)
+https://github.com/zachstronaut/jquery-animate-css-rotate-scale/
+
+> Queryloader2
+GayaDesing (http://www.gayadesign.com)
+http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/
+
+> Prettyphoto Jquery plugin
+Stephane Caron (http://www.no-margin-for-errors.com)
+http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/
+
+> The DVD case
+http://manicho.deviantart.com/
+http://manicho.deviantart.com/art/DVD-Case-Art-PSD-file-61443492
+
+> The poster image
+http://freepsdfiles.net
+http://freepsdfiles.net/print-templates/psd-poster-template-for-club-event/
+
+> Skin
+Per Sandstrom (http://www.helloper.com/)
+https://github.com/persand/jPlayer-skins
