@@ -1,0 +1,303 @@
+/*
+ *  --------------------------------------------------------------------------------------------------------------------
+ *  AUDIO-GALLERY-SUITE
+ *  --------------------------------------------------------------------------------------------------------------------
+ *  Author:     Robin Rizvi
+ *  Email:      mail@robinrizvi.info
+ *  Website:    http://robinrizvi.info/
+ *  Blog:       http://blog.robinrizvi.info/
+ *  Company:    SoftLogic (http://softlogicui.com/)
+ *  Copyright:  Copyright © 2012, Robin Rizvi
+ *  License:    MIT (http://www.opensource.org/licenses/MIT)
+ *  This attribution (header-comment) should remain intact while using, distributing or modifying the source in any way
+ *  -------------------------------------------------------------------------------------------------------------------
+*/
+
+body
+{
+	background-color:#F5F5F5;
+	background:url(../image/audiogallery_images/audiogallery_bg.png) repeat; 
+	margin:0px;
+	padding:0px;
+	font-family:"Century Gothic", Helvetica, sans-serif;
+	/*font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+}
+
+label
+{
+    /*text-shadow:1px 1px 1px #fff;*/
+	/*font-weight:550;*/
+}
+
+#left
+{
+	position:absolute;
+	left:0px;
+	width:30%;
+	height:100%;
+	border-right: #666 thick solid;
+	overflow:hidden;
+}
+
+#right
+{
+	position:absolute;
+	right:0px;
+	width:70%;
+	height:100%;
+	overflow:hidden;
+}
+
+#playlistselecttoolbar
+{
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:1.5em; /*I wanted the div size to be relative to the font size*/
+	background-image:url(../image/audiogallery_images/audiogallery_bg.png); 
+	background-repeat:repeat;
+	color:#FFF;
+	box-shadow:0 8px 6px -6px black;
+	border-bottom: #fff 1px solid;
+	padding:5px;
+	z-index:10000;
+}
+
+/*For custom select dropdown*/
+#playlistselect {display:none;}
+#playlistselect-button,#playlistselect-menu {font-size: 70%;}
+#playlistselect-menu{z-index:10001;}
+#playlistselecttoolbar label{ float: left; margin-right: 10px; }
+
+#audiolist
+{
+	background-color:#CCC;
+	width:100%;
+	height:100%;
+}
+#audiolist ul
+{
+	/*list-style-image:url(../image/audiogallery_images/audio.png);*/
+	list-style-type:circle;
+	list-style-position:inside;
+	vertical-align:text-top;
+	margin:0px;
+	padding:0px;
+}
+.audiotrack
+{
+	text-align: left;
+	background-color: #F0F0F0;
+	color: #666;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px white;
+	font-weight: bold;
+	width: 100%;
+	padding: 5px 5px 5px 10px;
+	margin-bottom:5px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;  
+    -ms-text-overflow: ellipsis;
+}
+.audiotrack:hover
+{
+	background-color:#333;
+	color:#FFF;
+	text-shadow: 1px 1px 1px black;
+	box-shadow:0 8px 6px -6px black;
+	cursor:pointer;
+}
+#searchaudiotoolbar
+{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	/*height:1.3em;*/ /*I wanted the div size to be relative to the font size*/
+	background-image:url(../image/audiogallery_images/audiogallery_bg.png); 
+	background-repeat:repeat;
+	color:#FFF;
+	box-shadow:0 -8px 6px -6px black;
+	border-top: #fff 1px solid;
+	padding:5px;
+}
+#searchbtnimg
+{
+	display:inline-block;
+	vertical-align:text-top;
+	margin-left:-7px;
+	width:21px;
+	height:22px;
+	margin-top:1px;
+	cursor:pointer;
+	background:url(../image/searchglass.png) no-repeat 0 0;
+}
+#searchbtnimg:hover
+{
+	background-image:url(../image/searchglass_hover.png);
+}
+
+/*styles for the right pane*/
+#player
+{
+	position:absolute;
+	bottom:0px;
+	padding-right:5px;
+	padding-left:5px;
+	
+}
+
+#toolbar
+{	
+	width:100%;
+	right:0px;
+	position:absolute;
+	padding:5px;
+	overflow:hidden;
+	background: #6e6e6e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+	background: -moz-linear-gradient(top,  #888,  #575757);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+	/*background:-webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
+	background: -moz-linear-gradient(top, #444, #333);
+	background: -o-linear-gradient(top, #444, #333);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#333333');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444, endColorstr=#333333)";*/
+	box-shadow:0 -8px 6px -6px black;
+	color:#FFF;
+	border-bottom: #666 thin solid;
+/*	border-top: #666 medium solid;*/
+	text-align:center;
+}
+
+#playerstatbar
+{
+	border-top: #666 thin solid;
+	width:100%;
+	right:0px;
+	position:absolute;
+	bottom:0px;
+	overflow:hidden;
+	background:-webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
+	background: -moz-linear-gradient(top, #444, #333);
+	background: -o-linear-gradient(top, #444, #333);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#333333');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444, endColorstr=#333333)";
+	color:#999;
+	font-size:0.9em;
+}
+
+#playerstatbar #nowplaying
+{
+	float:left;
+	margin-left:10px;
+}
+
+#playerstatbar #currentplaylist
+{
+	float:right;
+	margin-right:10px;
+}
+
+#addthissharetool
+{
+	float:left;	
+}
+
+#helptool
+{
+	float:right;
+}
+
+#coverart
+{
+	text-align:center;
+	padding-top:20px;
+}
+
+#rotatingdisc
+{
+	position:absolute;
+	/*display:none;	*/
+}
+
+.playing_track {
+	list-style-type:disc;
+	color:#FFF;
+	text-shadow: 1px 1px 1px black;
+	box-shadow:0 8px 6px -6px black;
+	cursor:pointer;
+	background: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top,  #444,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+
+.sharebar
+{
+	background-color: #333;
+	 border-color: #3b8eb5;
+	-webkit-background-size: 40px 40px;
+	-moz-background-size: 40px 40px;
+	background-size: 40px 40px;
+	background-image: -webkit-gradient(linear, left top, right bottom,
+											color-stop(.25, rgba(255, 255, 255, .05)), color-stop(.25, transparent),
+											color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .05)),
+											color-stop(.75, rgba(255, 255, 255, .05)), color-stop(.75, transparent),
+											to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+											transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+											transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+											transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+											transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+											transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+											transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+											transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+											transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+											transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+											transparent 75%, transparent);
+	 /*-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+	 -webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+	 box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);*/
+	 box-shadow:0 -8px 6px -6px black;
+	border-top: #fff 1px solid;
+	 /*border: 1px solid black;*/
+	 color: #fff;
+	 padding: 5px;
+	 text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	 -webkit-animation: animate-bg 1s linear infinite;
+	 -moz-animation: animate-bg 1s linear infinite;
+	 z-index:10010;
+	 display:none;
+	 position:absolute;
+	 right:0px;
+	 text-align:center;
+}
+
+@-webkit-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+
+@-moz-keyframes animate-bg
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}

@@ -1,0 +1,140 @@
+<!--
+ *  --------------------------------------------------------------------------------------------------------------------
+ *  AUDIO-GALLERY-SUITE
+ *  --------------------------------------------------------------------------------------------------------------------
+ *  Author:     Robin Rizvi
+ *  Email:      mail@robinrizvi.info
+ *  Website:    http://robinrizvi.info/
+ *  Blog:       http://blog.robinrizvi.info/
+ *  Company:    SoftLogic (http://softlogicui.com/)
+ *  Copyright:  Copyright © 2012, Robin Rizvi
+ *  License:    MIT (http://www.opensource.org/licenses/MIT)
+ *  This attribution (header-comment) should remain intact while using, distributing or modifying the source in any way
+ *  -------------------------------------------------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Add keyboard support for the player play-pause-forward-rewind-etc,Implement right-click menu in audio and main page,dragdrop file into player,add sppeech like play playtrack 5 play songname etc,-->
+<title>Audio Gallery</title>
+<!--STYLES-->
+<link rel="Stylesheet" href="style/vader/jqueryui.css" type="text/css" />
+<link rel="Stylesheet" href="style/ui.selectmenu.css" type="text/css" />
+<link href="style/showLoading.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" />
+<link type="text/css" href="skins/jplayer/skin-dark/jplayer.dark.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="style/gradient_button.css"/>
+<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css"/>
+<link type="text/css" rel="stylesheet" href="style/style_audio.css" />
+<!--/STYLES-->
+<!--SCRIPTS-->
+<script type="text/javascript" src="script/jquery.min.js"></script><!--Using this lower version because jquery-css-transform only works for this else I would have to write browser detection and other codes-->
+<script type="text/javascript" src="script/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script/ui.selectmenu.js"></script>
+<script type="text/javascript" src="script/jquery.showLoading.min.js"></script>
+<script type="text/javascript" src="script/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="script/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="script/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="script/jquery-css-transform.js"></script>
+<script type="text/javascript" src="script/jquery-animate-css-rotate-scale.js"></script>
+<script type="text/javascript" src="script/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="script/jquery.queryloader2.js"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f02e2964b368e19"></script>
+<script type="text/javascript" src="script/script_audio.js"></script>
+<!--/SCRIPTS-->
+<!--For production use the commented scripts and styles that use CDN because that will deliver performance-->
+</head>
+
+<body>
+<!--Contains the album selector, audios from the playlist and search-->
+<div id="left">
+<div id="playlistselecttoolbar">
+	<label>Select Playlist : </label>
+    <select name="playlistselect" id="playlistselect">
+      <!--Content will be loaded via ajax php from the database-->
+    </select>
+</div>
+<div id="audiolist">
+	<!--Content will be loaded via ajax php from the database.-->
+</div>
+<div id="searchaudiotoolbar">
+<label>Search Audio : </label>
+<input id="searchinput" name="audiosearchtxt" type="text" />
+<div id="searchbtnimg"></div>
+</div>
+</div>
+
+<!--Contains the audio player, cover art and hopefully a visualizer if I can pull it off-->
+<div id="right">
+<div id="coverart">
+<img src="image/audiogallery_images/coverart.png" oriwidth="693" oriheight="680" width="693" height="680" alt="coverart" />
+<img id="rotatingdisc" src="image/audiogallery_images/rotating_disc.png" width="350" height="350" alt="rotatingdisc" />
+</div>
+<div class="sharebar">
+   <input name="audiourl" type="text" readonly="true" />
+   <!--<a id="copyurltool" class="button gray medium">COPY</a>-->
+</div>
+<div id="visualizer">
+
+</div>
+<div id="toolbar">
+	<a id="shareaudiotool" class="sharebar-trigger button gray medium">LINK</a>
+    <a id="addthissharetool" class="sharebar-trigger button gray medium">SHARE</a>
+    <a id="downloadaudiotool" target="_blank" class="button gray medium">DOWNLOAD</a>
+    <a id="helptool" class="button gray medium" rel="prettyPhoto[inline]" href="#inline_content">HELP</a>
+</div>
+<div id="player">
+	<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+    		<div class="jp-audio">
+			<div class="jp-type-playlist">
+				<div id="jp_interface_2" class="jp-interface">
+					<ul class="jp-controls">
+						<li><a href="#" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="#" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
+						<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+						<li><a href="#" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="#" class="jp-next" tabindex="1">next</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-current-time"></div>
+					<div class="jp-duration"></div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<div id="playerstatbar">
+	<span id="nowplaying">Now Playing: <span></span></span>
+    <span id="currentplaylist">Current Playlist: <span></span></span>
+</div>
+</div>
+<!--This is an isolated div to show help to the users-->
+<div style='display:none'>
+    <div id='inline_content'>
+    	<div style="background-color:#000;padding:5px;width:98%; margin-bottom:5px;text-align:center;color:#FFF;height:1em;font-size:1em;">HELP/INSTRUCTIONS</div>
+        <div style='padding:10px; vertical-align:middle; font-size:0.9em;'>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/mouse.png" width="50" height="70" /><span style='margin-left:10px;'>Use your mouse to interact with the player.</span></div>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/space.png" width="150" height="50" /><span style='margin-left:10px;'>Press the space-bar to toggle Play and Pause.</span></div>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/right.png" width="50" height="50" /><span style='margin-left:10px;'>Press the right arrow key to jump to next audio.</span></div>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/left.png" width="50" height="50" /><span style='margin-left:10px;'>Press the left arrow key to jump to previous audio.</span></div>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/m.png" width="50" height="50" /><span style='margin-left:10px;'>Press the M key to toggle mute and unmute.</span></div>
+            <div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/shift.png" width="50" height="50" /> + <img style='vertical-align:middle;' src="image/help_images/right.png" width="50" height="50" /><span style='margin-left:10px;'>Use Shift + Right arrow key to seek forward.</span></div>
+			<div style="margin-bottom:15px"><img style='vertical-align:middle;' src="image/help_images/shift.png" width="50" height="50" /> + <img style='vertical-align:middle;' src="image/help_images/left.png" width="50" height="50" /><span style='margin-left:10px;'>Use Shift + Left arrow key to seek backward.</span></div>
+        </div>
+        <div style="background-color:#000;padding:5px;width:98%; margin-bottom:5px;text-align:center;color:#FFF;height:1em;font-size:1em;"><input name="popupstartup" id="popupstartupcheck" onchange="showpopupchange();" type="checkbox" value="" />  &nbsp;Do not show at start up!</div>
+    </div>
+</div>
+</body>
+</html>
