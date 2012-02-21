@@ -37,7 +37,7 @@ CREATE TABLE `audio` (
   UNIQUE KEY `unique_title_playlist` (`title`,`playlist_id`) USING BTREE,
   KEY `audiotoplaylist` (`playlist_id`),
   CONSTRAINT `audiotoplaylist` FOREIGN KEY (`playlist_id`) REFERENCES `playlist` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `audio`
@@ -62,7 +62,7 @@ CREATE TABLE `playlist` (
   UNIQUE KEY `uniqueindex` (`name`,`user_id`),
   KEY `FK_playlist_user` (`user_id`),
   CONSTRAINT `FK_playlist_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `playlist`
