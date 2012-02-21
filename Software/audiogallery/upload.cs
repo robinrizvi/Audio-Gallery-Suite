@@ -63,8 +63,8 @@ namespace audiogallery
                 {
                     this.filename = filename;
                     filenametxt.Text = filename;
-                    titletxt.Text =new FileInfo(filename).Name;
-                    descriptiontxt.Text =new FileInfo(filename).Name;
+                    titletxt.Text = Path.GetFileNameWithoutExtension(filename);
+                    descriptiontxt.Text = titletxt.Text;
                 }
             }
         }
@@ -85,7 +85,7 @@ namespace audiogallery
         {
             string UploadPath;
             FtpWebRequest request;
-            int ChunkSize = 4096, NumRetries = 0, MaxRetries = 3;
+            int ChunkSize = 102400, NumRetries = 0, MaxRetries = 3;
             byte[] Buffer = new byte[ChunkSize];
 
             //for updating status to the ui thread
