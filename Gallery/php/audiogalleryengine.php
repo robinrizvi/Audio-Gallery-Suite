@@ -71,7 +71,7 @@
 	
 		$title=$tuple['title'];
 	
-		$audiourl="{$host}audiogallery/user_{$userid}/playlist_{$playlistid}/audios/{$name}";
+		$audiourl="{$root}audiogallery/user_{$userid}/playlist_{$playlistid}/audios/{$name}";
 	
 		$html.="<li class=\"audiotrack\" url=\"{$audiourl}\">{$title}</li>";	
 	  }

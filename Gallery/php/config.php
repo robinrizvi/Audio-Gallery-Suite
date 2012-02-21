@@ -15,5 +15,5 @@
 */
 
 $mysqli = new mysqli("localhost", "audgaldbusr", "audgaldbpwd", "audiogallery");
-$host= "http://localhost/audiogallery/";
+$root= "http://root_url_to_web_gallery/";
 ?>

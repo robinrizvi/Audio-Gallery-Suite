@@ -23,7 +23,7 @@ if (isset($_GET['file']))
 
   $filename=basename($fullfilename);
   
-  $relativefilename=substr($fullfilename,strlen($host));
+  $relativefilename=substr($fullfilename,strlen($root));
 
   header('Content-Type: application/octet-stream');
 
