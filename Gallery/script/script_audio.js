@@ -93,12 +93,12 @@ $(document).ready(function(){
   		$("#player").data("currenttime",event.jPlayer.status.currentTime);
 		$("#player").data("currenttrackduration",event.jPlayer.status.duration);
 	});
-	//adding audioplaying status data to my player
+	//adding audioplaying status data to my player and starting the disc
 	$("#jquery_jplayer_2").bind($.jPlayer.event.play, function() { 
   		$("#player").data("audioplaying",true);
 		startdisk();
 	});
-	//adding audioplaying status data to my player
+	//adding audioplaying status data to my player and stopping the disc
 	$("#jquery_jplayer_2").bind($.jPlayer.event.pause, function() {
   		$("#player").data("audioplaying",false);
 		stopdisk();
@@ -408,12 +408,11 @@ function initjplayerplaylistfunctions()
 			$(this.cssSelector.playlist + "_item_" + index).addClass("jp-playlist-current").parent().addClass("jp-playlist-current");
 			this.current = index;
 			$(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
-			$("#nowplaying span").text(this.playlist[this.current].name);/*added this line*/
-			$("#player").data("currenttrackurl",this.playlist[this.current].mp3);/*added this line*/
-			playlistuiupdate(1,$('#player').data("currenttrackindex"),index);/*added this line*/
-			$('#player').data("currenttrackindex",index);/*added this line*/
-			shareupdate($("#player").data("currenttrackurl"),this.playlist[this.current].name);/*added this line*/
-			//$('.sharebar input').attr('value',$("#player").data("currenttrackurl")).select();/*added this line*/
+			$("#nowplaying span").text(this.playlist[this.current].name);
+			$("#player").data("currenttrackurl",this.playlist[this.current].mp3);
+			playlistuiupdate(1,$('#player').data("currenttrackindex"),index);
+			$('#player').data("currenttrackindex",index);
+			shareupdate($("#player").data("currenttrackurl"),this.playlist[this.current].name);
 		},
 		playlistChange: function(index) {
 			this.playlistConfig(index);
@@ -472,7 +471,7 @@ function initplayerkeyboardsupport()
 {
 	$(document).keydown(function(event)
 	{
-		//event.preventDefault();
+		//for seeking
 		if (event.shiftKey)
 		{
 			switch (event.keyCode) 
@@ -530,7 +529,7 @@ function initplayerkeyboardsupport()
 					$("#player").data("audioplaying",false);	
 				}
 			  	break;
-			case 77: // M,m
+			case 77: // m
 			  	if ($("#player").data("muted")===false || $("#player").data("muted")===undefined)
 				{
 					$("#jquery_jplayer_2").jPlayer("mute");
@@ -542,7 +541,7 @@ function initplayerkeyboardsupport()
 					$("#player").data("muted",false);	
 				}
 			  	break;
-			case 109: // M,m
+			case 109: // M
 			  	if ($("#player").data("muted")===false || $("#player").data("muted")===undefined)
 				{
 					$("#jquery_jplayer_2").jPlayer("mute");
@@ -600,23 +599,3 @@ function startdisk()
 	var randnum=Math.floor(Math.random() * (60 - 10 + 1) + 10);//remove this if it doesn't suite you
 	rotatedisk($('#rotatingdisc'),randnum);
 }
-
-/*function getcorrecttransformstring()
-{
-	var runs=false;
-	var prefix;
-	if (Modernizr.csstransforms)
-	{
-		runs=true;
-	}
-	if (runs)
-	{
-		if ($.browser.webkit) prefix="-webkit-transform";
-		else if ($.browser.mozilla)	prefix="-moz-transform";
-		else if ($.browser.msie) prefix="-ms-transform";
-		else if ($.browser.opera) prefix="-o-transform";
-		else prefix="transform";
-		return prefix;
-	}
-	else return false;
-}*/
