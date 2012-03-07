@@ -102,11 +102,8 @@ namespace audiogallery
                     if (fileuploadedremotely)
                     {
                         #region upload audio to remote server
-                        //convert the open filestraem to a image stream with jpeg format
                         UploadPath = user.ftpurl + "user_" + user.userid + "/playlist_" + user.currentplaylistid + "/audios/" + onlyfilename;
                         request = (FtpWebRequest)WebRequest.Create(UploadPath);
-                        //request.UseBinary = true;
-                        //request.UsePassive = true;
                         request.Method = WebRequestMethods.Ftp.UploadFile;
                         request.Credentials = new NetworkCredential(user.ftpusername, user.ftppassword);
                         using (Stream requestStream = request.GetRequestStream())
@@ -136,8 +133,7 @@ namespace audiogallery
                                         }
                                         else
                                         {
-                                            //MessageBox.Show("Could not upload " + onlyfilename + " after several attempts. Please check your network connectivity. This file will be skipped.");
-                                            fileuploadedremotely = false;//I could have thrown an exception here but by checking a variable its less costly than throwing and catching albiet its more elegant
+                                            fileuploadedremotely = false;
                                             break;
                                         }
                                     }
@@ -191,9 +187,7 @@ namespace audiogallery
             }
             catch (Exception)
             {
-                //exception occurs due to multithreading this function gets executed concurrently and so stack of this function gets duplicate values for same variable and sometimes so even the stack gets overflowed   
                 //do nothing
-                
             }
         }
 

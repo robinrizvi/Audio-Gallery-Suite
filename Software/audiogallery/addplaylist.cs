@@ -103,14 +103,6 @@ namespace audiogallery
                     request.Method = WebRequestMethods.Ftp.MakeDirectory;
                     request.GetResponse();
 
-                    //creating thumbs folder in playlist folder
-                    //createpath = user.ftpurl + "user_" + user.userid + "/playlist_" + newaddedplaylistid + "/thumbs";
-                    //request = (FtpWebRequest)FtpWebRequest.Create(createpath);
-                    //request.Credentials = new NetworkCredential(user.ftpusername, user.ftppassword);
-                    //request.KeepAlive = true;
-                    //request.Method = WebRequestMethods.Ftp.MakeDirectory;
-                    //request.GetResponse();
-
                     //creating audios folder in the playlist folder
                     createpath = user.ftpurl + "user_" + user.userid + "/playlist_" + newaddedplaylistid + "/audios";
                     request = (FtpWebRequest)FtpWebRequest.Create(createpath);

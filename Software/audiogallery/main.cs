@@ -88,12 +88,7 @@ namespace audiogallery
             audiolistview.Items.Clear();
             foreach (user.audio audio in user.audios)
             {
-                //string filename = Application.StartupPath + "\\temp\\playlist_" + currentplaylistid + "\\thumbs\\" + audio.thumb;
-                //FileStream fs = new FileStream(filename, FileMode.Open);
-                //Bitmap img = (Bitmap)Image.FromStream(fs);
-                //fs.Close();
-                //Bitmap img = new Bitmap(filename);
-                audioimagelist.Images.Add(audio.id.ToString(), Properties.Resources.audio);//Containing same image multiple times I dun know if that will cause a perf. hit or microsoft has coded it efficiently. I dun hav time to chk. I'll see later.
+                audioimagelist.Images.Add(audio.id.ToString(), Properties.Resources.audio);
                 audiolistview.Items.Add(audio.title, audio.id.ToString());
             }
         }

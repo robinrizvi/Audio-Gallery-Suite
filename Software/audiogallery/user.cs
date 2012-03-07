@@ -772,7 +772,7 @@ namespace audiogallery
 			return true;
 		}
 
-		public static void getaudios(object data)//reads records from the audio table for a particular albumid and for each record calss downloadpicture() to download that picture and then saves the entries in the pictures list
+		public static void getaudios(object data)//reads records from the audio table for a particular albumid and then saves the entries in the pictures list
 		{
 			Int32 currentplaylistid = (Int32)data;
 			audios.Clear();
@@ -790,7 +790,7 @@ namespace audiogallery
 					p1.name = rdr["name"].ToString();
 					p1.title = rdr["title"].ToString();
 					p1.description = rdr["description"].ToString();
-					if (downloadaudio(p1, currentplaylistid)) audios.Add(p1);//add the audios to the list don let the filestream errors from preventing the album to show up
+					if (downloadaudio(p1, currentplaylistid)) audios.Add(p1);//add the audios to the list
 				}
 				conn.Close();
 			}
@@ -801,7 +801,7 @@ namespace audiogallery
 			}
 		}
 
-		private static bool downloadaudio(audio audiotodownload, Int32 playlistid)//downloads audio and audio thumbs and saves it to local temp in particular album's directory. Do something about the downloaded audio load it in vlc etc
+		private static bool downloadaudio(audio audiotodownload, Int32 playlistid)//downloads audio and audio thumbs and saves it to local temp in particular album's directory. This feature will be used in the future to allow the users to listen to audios as well inside the software
 		{
 			try
 			{
