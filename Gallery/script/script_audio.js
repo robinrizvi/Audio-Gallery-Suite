@@ -65,7 +65,7 @@ $(document).ready(function(){
 	$(window).resize(function(){setdimensions();});
 	
 	//Filling the playlist select box with values via XHR/ajax
-	$("#playlistselect").load("php/audiogalleryengine.php",{playlistselect:1},function(){$("#playlistselect").change();$('select').selectmenu({style:'dropdown'});});
+	$("#playlistselect").load("php/audiogalleryengine.php",{playlistselect:1},function(){$("#playlistselect").change();$('select').selectmenu({style:'dropdown'});$("#playlistselect-menu").jScrollPane();});
 	
 	//Event handler for playlistselect change
 	$("#playlistselect").change(function(){

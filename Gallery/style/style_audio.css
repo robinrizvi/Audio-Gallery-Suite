@@ -67,7 +67,13 @@ label
 /*For custom select dropdown*/
 #playlistselect {display:none;}
 #playlistselect-button,#playlistselect-menu {font-size: 70%;}
-#playlistselect-menu{z-index:10001;}
+#playlistselect-menu
+{
+	z-index:10001;
+	height:400px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
 #playlistselecttoolbar label{ float: left; margin-right: 10px; }
 
 #audiolist
