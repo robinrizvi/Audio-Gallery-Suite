@@ -1,14 +1,38 @@
 ABOUT
-Audio-Gallery-Suite is a complete audio gallery solution made with HTML5/CSS3/Jquery-JS/PHP-ajax/C# that includes a web audio gallery and a software for managing the web audio gallery.
+Audio-Gallery-Suite is a complete audio gallery solution made with HTML5/CSS3/Jquery-JS/PHP-ajax/C# that includes a web audio gallery and a software (both web and windows based) for managing the web audio gallery.
 
-DEMOS
+DEMOS (not updated)
 http://projects.robinrizvi.info/audio-gallery-suite/
 http://projects.robinrizvi.info/audio-gallery-suite/software/audiogallery_setup.zip
 
-USAGE
+Gallery Management
+Windows based software (deprecated)
+The windows based software that was earlier used to manage the audio gallery suite (CRUD management for playlists and audios) has not been tested with the latest commits made and may or may not fucntion correctly.
+Web based application
+A web based management panel (named as Gallardmin) has been added. Gallardmin is a web based gallery management module that helps in management of the audio gallery suite using a web based interface. It uses the latest web technologies and a cleaner intuitive interface.
+
+USAGE (does not include usage instructions for Gallardmin)
 Visit the links below to see complete instructions on how to use and setup the Audio-Gallery-Suite.
 http://www.codeproject.com/Articles/333670/Audio-Gallery-Suite-A-complete-audio-gallery-solut
 http://blog.robinrizvi.info/?p=55
+
+USAGE (include usage instructions for setup of Audio-Gallery-Suite using Gallardmin)
+1.Download this zip:
+https://github.com/robinrizvi/Audio-Gallery-Suite/archive/master.zip
+
+2. Execute these sql scripts (present in Resources/SQL Script) in your mysql server:
+i) audiogallery_db.sql
+ii) create_user_[optional].sql
+
+3) Copy/upload the Gallery folder from the zip to your server where-ever you want
+
+4) Go to http://your_domain_url/Gallery/management/audiogallery/login.html
+
+5) type superuser and superuser as username and password respectively
+
+6) Add playlist and add audios under that playlist
+
+7) Go to your http://your_url/Gallery/index.html to view your gallery
  
 AUTHOR
 Robin Rizvi
