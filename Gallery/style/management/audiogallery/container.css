@@ -1,0 +1,303 @@
+.container
+{
+	position:relative;
+	top:-50px;
+	width:80%;
+	height:600px;
+	margin:auto;
+	margin-top:50px;
+	background-color:#FFF;
+	-moz-box-shadow: 0 0 8px #888;
+	-webkit-box-shadow: 0 0 8px #888;
+	box-shadow: 0 0 8px #888;
+}
+
+.container .bar
+{
+	width:100%;
+	height:40px;
+	background: #333  url(../../../image/management_images/pattern.png) repeat;
+	/*background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 1)), color-stop(50%,rgba(241, 241, 241, 1)), color-stop(51%,
+rgba(225, 225, 225, 1)), color-stop(100%,rgba(246, 246, 246, 1)));
+background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(241, 241, 241, 1) 50%,rgba(225, 225, 225, 1) 51%,rgba(246, 246, 246, 1) 100%);
+background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(241, 241, 241, 1) 50%,rgba(225, 225, 225, 1) 51%,rgba(246, 246, 246, 1) 100%);
+background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(241, 241, 241, 1) 50%,rgba(225, 225, 225, 1) 51%,rgba(246, 246, 246, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+background: linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(241, 241, 241, 1) 50%,rgba(225, 225, 225, 1) 51%,rgba(246, 246, 246, 1) 100%);*/
+	z-index:9;
+}
+
+.container #topbar
+{
+	-moz-box-shadow: 0 3px 10px 3px #888;
+	-webkit-box-shadow: 0 0px 10px 3px #888;
+	box-shadow: 0 0px 10px 3px #888;
+}
+
+.container .icon
+{
+	display:inline-block;
+	height:40px;
+	width:50px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	-moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	background: #202020;
+}
+
+.container .icon img
+{
+	margin-left:5px;
+}
+
+.container .heading
+{
+	position:relative;
+	bottom:13px;
+	left:5px;
+	font-size:16px;
+	letter-spacing:2px;
+}
+
+.container .moduletitle
+{
+	display:inline-block;
+	width:70%;
+	text-align:center;
+	position:relative;
+	bottom:13px;
+	left:5px;
+	font-size:16px;
+	letter-spacing:2px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.container .toolbox
+{
+	display:inline-block;
+	float:right;
+}
+
+.container .toolbox .icon
+{
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	cursor:pointer;
+}
+
+.container .toolbox .icon:hover
+{
+	background-color:rgba(0,133,204,1);
+}
+
+.container .contentbox
+{
+	width:100%;
+	height:500px;
+}
+
+.container .item
+{
+	display:inline-block;
+	width:164px;
+	height:165px;
+	cursor:pointer;
+	overflow:hidden;
+	margin-left:23px;
+	margin-top:30px;
+	margin-bottom:10px;
+	padding:10px;
+	border:1px solid #FFF;
+	border-radius:5px;
+	background: #FFF;
+	box-shadow: 1px 1px 5px #888;
+	z-index:2;
+}
+
+.container .item:hover
+{
+	/*background-color:rgba(0,0,0,0.5);*/
+	box-shadow:0px 0px 10px #069;
+}
+
+.item .thumb
+{
+	width:164px;
+	height:123px;
+	background:#999;
+}
+
+.item .title
+{
+	margin-top:1px;
+	height:20px;
+	padding-left:5px;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	background-color:#202020;
+}
+
+.item .minicommandbar
+{
+	margin-top:5px;
+	color:#000;
+}
+
+.item .minicommand
+{
+	display: inline-block;
+	margin-right: 44px;
+    color: #6e6e6e;
+	font: 16px Helvetica, Arial, sans-serif;
+	cursor: pointer;
+	width: 20px;
+	text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background: #f3f3f3;
+    border: solid 1px #dcdcdc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.item .minicommand:hover
+{
+	color: #F6F6F6;
+	background-color:rgba(0, 133, 204, 1);
+}
+
+.minicommandbar div:nth-child(3)
+{
+	margin-right:0px;
+}
+
+.container #bottombar
+{
+	-moz-box-shadow: 3px 0 10px 3px #888;
+	-webkit-box-shadow: 3px 0px 10px 3px #888;
+	box-shadow: 3px 0px 10px 3px #888;
+	height:60px;
+}
+
+.container .command {
+	display: inline-block;
+	margin-top: 7.5px;
+	margin-left: 12%;
+    color: #6e6e6e;
+	font: 12px Helvetica, Arial, sans-serif;
+	cursor: pointer;
+	letter-spacing: 1px;
+    padding: 5px 10px;
+	width: 80px;
+	text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background: #f3f3f3;
+    border: solid 1px #dcdcdc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background-color 1s,color 1s,border-color 1s;
+	-moz-transition: background-color 1s,color 1s,border-color 1s;
+	-o-transition: background-color 1s,color 1s,border-color 1s;
+	transition: background-color 1s,color 1s,border-color 1s;
+}
+
+.container .command:hover
+{
+    color: #FFF;
+	background-color:rgba(0, 133, 204, 1);
+    border-color: rgba(0, 133, 204, 1);
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.container .command:active
+{
+    color: #000;
+    border-color: #444;
+}
+
+.command div
+{
+  font-family: 'FontAwesome';
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+/*profile module*/
+#profilemodule .container .contenbox
+{
+	text-align:center;	
+}
+
+.container .contentbox .privilageinfo,.container .contentbox .quotainfo,.container .contentbox .userinfo
+{
+	width:320px;
+	display:inline-block;
+	overflow:hidden;
+	margin-left:5px;
+	margin-top:20px;
+	border:1px dotted #999;
+	/*white-space:nowrap;*/
+	text-align:center;
+	vertical-align:top;
+}
+
+.container .contentbox .privilageinfo .header,.container .contentbox .quotainfo .header,.container .contentbox .userinfo .header
+{
+	background: #333 url(../../../image/management_images/pattern.png) repeat;
+	padding:5px;
+	letter-spacing:2px;
+}
+
+.container .contentbox .privilageinfo .value,.container .contentbox .quotainfo .value,.container .contentbox .userinfo .value
+{
+	color:#000;
+	font-size:18px;
+}
+
+.container .contentbox .privilageinfo .value
+{
+	font-size:23px;
+}
+
+.container .contentbox .privilageinfo element,.container .contentbox .quotainfo element,.container .contentbox .userinfo element
+{
+	display:block;
+}
+
+.container .contentbox .privilageinfo
+{
+	margin-left:40px;
+}
+
+/*playlist module */
+#playlistaudiomodule_playlist .jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: #999;
+}
+
+#playlistaudiomodule_playlist .container
+{
+	height:340px;
+}
+
+#playlistaudiomodule_playlist .container .contentbox
+{
+	white-space:nowrap;
+	height:240px;
+	max-height:240px;
+}

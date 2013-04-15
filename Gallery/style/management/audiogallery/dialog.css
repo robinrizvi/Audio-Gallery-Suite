@@ -1,0 +1,398 @@
+.dialog
+{
+	position:fixed;
+	width:35%;
+	background-color:#FFF;
+	color:#000;
+	border-radius:6px;
+	box-shadow:0px 0px 5px 1px #333;
+	opacity:1;
+	z-index:101;
+	overflow:hidden;
+	display:none;
+}
+
+.viewdialog
+{
+	height:434px;
+}
+
+#usersmodule .viewdialog .body
+{
+	height:404px;
+	overflow:hidden;
+}
+
+#usersmodule .createdialog .body
+{
+	height:412px;
+	overflow:hidden;
+}
+
+#usersmodule .editdialog .body
+{
+	height:412px;
+	overflow:hidden;
+}
+
+#usersmodule .viewdialog .element.avatar
+{
+	text-align:center;
+}
+
+#usersmodule .viewdialog .element.avatar img
+{
+	border:2px #000 solid;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	-moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  	background: #202020;
+  	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dialog .bar
+{
+	width:100%;
+	height:30px;
+	color:#FFF;
+	background: #404040;
+}
+
+.dialog .titlebar
+{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+}
+
+.dialog .commandbar
+{
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	height:40px;
+}
+
+.titlebar .icon
+{
+	display:inline-block;
+	padding:3px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:20px;
+	border-top-left-radius:5px;
+    border-right:solid 1px #202020;
+  	background: #404040;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.titlebar .icon:hover
+{
+	background: rgba(0,133,204,1);
+}
+
+.titlebar .heading
+{
+	letter-spacing:.1em;
+	font-weight:500;
+	margin-left:5px;
+}
+
+.dialog .windowbtn
+{
+	display:inline-block;
+	float:right;
+	font-size:19px;
+	cursor:pointer;
+	margin-right:10px;
+	margin-top:4px;
+}
+
+.dialog .windowbtn:hover
+{
+	color:#CCC;
+}
+
+.dialog .body
+{
+	width:100%;
+	height:100%;
+}
+
+.body .element
+{	
+	padding:10px;
+	border-bottom:1px dotted #999;
+}
+
+.body .element:hover
+{
+	background: #EBEBEB;
+}
+
+.element label
+{
+	color: #333;
+	letter-spacing:0.15em;
+	line-height: 25px;
+	text-shadow: 0 1px 0 #333;
+	font-size:14px;	
+}
+
+.element input[type="text"],.element input[type="password"],.element .fileinput
+{
+	border-color: #C6C6C6 #DADADA #EAEAEA;
+	background: #FAFAFA;
+	color: #999;
+	vertical-align: middle;
+	padding: 2.3%;
+	font-size:16px;
+	letter-spacing:1px;
+	width: 95%;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #BBB;
+	-webkit-box-shadow: inset 0 2px 2px #CCC, 0 1px 0 white;
+	-moz-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+	box-shadow: inset 0 2px 2px #CCC, 0 1px 0 white;
+}
+
+.element .fileinput
+{
+	/*cursor:default;*/
+	height:40px;
+	width:100%;
+	margin-top:2px;
+	padding: 0px;
+}
+
+.element .fileinput .file
+{
+	display:inline-block;
+	width:85%;
+	font-size:13px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#profilemodule .element .fileinput .file
+{
+	margin-left:0;	
+}
+
+.file .filename
+{
+	display:inline-block;
+	max-width:70%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+/*#profilemodule .userinfo .file .filename
+{
+	max-width:50%;	
+}*/
+
+.element .fileinput .file .progress {
+background-color: #E5E5E5;
+margin-top: 6px;
+width: 100%;
+}
+
+.element .fileinput .file .progressbar {
+background-color: #09F;
+height: 3px;
+width: 0;
+}
+
+.element .fileinput .browsebtn
+{
+	display:inline-block;
+	height:100%;
+	width:15px;
+	position:relative;
+	overflow:hidden;
+	padding-right:10px;
+	padding-left:10px;
+	float:right;
+	text-align: center;	
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;	
+	color: #606060;
+	border-left: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+
+.browsebtn div
+{
+	font-size: 22px;
+	margin-top:10px;
+}
+
+.browsebtn input[type="file"]
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+
+.element .fileinput .browsebtn:hover
+{
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+
+.element .fileinput .browsebtn:active
+{
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+.element input[type="text"]:hover,.element input[type="password"]:hover,.element input[type="text"]:focus,.element input[type="password"]:focus,.element .fileinput:hover
+{
+	color: #666;
+	background: white none;
+	border-color: #C6C6C6;
+}
+
+.element input[type="text"]:focus,.element input[type="password"]:focus
+{
+	outline: none;
+	border: 1px solid #77BACE;
+	-webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+	-moz-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+	box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+}
+
+.element.thumbnail .auto
+{
+	cursor:default;	
+}
+
+.element.thumbnail .url,.element.item .fileinput
+{
+	display:none;
+}
+
+.element.thumbnail .fileinput
+{
+	display:none;
+}
+
+#playlistaudiomodule_playlist .element.thumbnail .fileinput,#playlistaudiomodule_audio .element.thumbnail .fileinput,#usersmodule .element.thumbnail .fileinput,#profilemodule .element.thumbnail .fileinput
+{
+	display:block;
+}
+
+.dialog .button,#profilemodule .userinfo .button
+{
+	float:right;
+	display: inline-block;
+	margin-top: 4px;
+	margin-right:10px;
+    color: #6e6e6e;
+	font-size: 12px;
+	cursor: pointer;
+	letter-spacing: 1px;
+    padding: 5px 5px;
+	width: 80px;
+	text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background: #f3f3f3;
+    border: solid 1px #dcdcdc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.dialog .button span
+{
+	font-size:16px;	
+}
+
+.dialog .button:hover,#profilemodule .userinfo .button:hover
+{
+    color: #FFF;
+	background-color:rgba(0, 133, 204, 1);
+    border-color: rgba(0, 133, 204, 1);
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.dialog .button:active,#profilemodule .userinfo .button:active
+{
+    color: #000;
+    border-color: #444;
+}
+
+.dialog .status
+{
+	width:50px;
+	height:100%;
+	float:left;
+	overflow:hidden;
+}
+
+.element .thumbradioset,.element .fileradioset
+{
+	display:inline;
+	float:right;
+	margin-top:-4px;
+}
+
+.element .adtyperadioset
+{
+	padding-left:10px;
+	padding-top:5px;
+	display:inline;
+}
+
+.element .adtyperadioset label,.element .thumbradioset label,.element .fileradioset label
+{
+	color:#FFF;
+	padding:0px;	
+}
+
+#profilemodule .userinfo .body
+{
+	max-height:390px;
+	overflow:hidden;
+}
+
+#profilemodule .privilageinfo,#profilemodule .quotainfo
+{
+	max-height:470px;	
+}
+
+/*playlist module*/
+#playlistaudiomodule_playlist .viewdialog .element.thumb
+{
+	text-align:center;
+}
+
+#playlistaudiomodule_audio .viewdialog .body
+{
+	background-color:#f0f0f0;
+	text-align:center;
+}
+
+#playlistaudiomodule_audio .viewdialog .body .cp-container
+{
+	position:relative;
+	top:100px;
+	left:28%;
+}

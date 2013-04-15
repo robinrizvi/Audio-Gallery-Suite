@@ -1,0 +1,180 @@
+body
+{
+	background: #333  url(../../../image/management_images/pattern.png) repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	transition: background-color 1s;
+	
+	/*extra can delete this*/
+/*	-webkit-transition: background-image 1s;
+	-moz-transition: background-image 1s;
+	-o-transition: background-image 1s;
+	transition: background-image 1s;*/
+}
+
+#login-box
+{
+	width:400px;
+	height:300px;
+	position:absolute;
+/*	bottom:10%;*/
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-100px;
+	background:url(../../../image/management_images/bg.gif) repeat;
+	border: 1px solid #000;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0 0 20px 5px #000;
+	-moz-box-shadow: 0 0 50px 5px #000;
+	-webkit-box-shadow: 0 0 20px 5px #000;
+/*	transform: scale(1.05,1.05);
+	-ms-transform: scale(1.05,1.05);
+	-webkit-transform: scale(1.06,1.06);
+	-o-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);*/
+}
+
+#box-header {
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-align:center;
+	text-shadow:0px 1px 0px rgba(255,255,255,0.35);
+	position: absolute;
+	top: -14px;
+	left:0px;
+	width: 400px;
+	height:30px;
+	color:#FFF;
+	background: #333;
+	box-shadow: 0 0 5px 3px #000;
+	-moz-box-shadow: 0 0 5px 3px #000;
+	-webkit-box-shadow: 0 0 5px 3px #000;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	padding-top:5px;
+}
+
+#logo
+{
+	position: absolute;
+	top: -135px;
+	left:50%;
+	margin-left:-164px;	
+}
+
+#status
+{
+	width:45px;
+	height:45px;
+	position:absolute;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	opacity:1;
+	background:#333;
+	left:50%;
+	top:40px;
+	margin-left:-25px;
+	text-align:center;
+	-moz-box-shadow: 0 0 1px 1px #000;
+	-webkit-box-shadow: 0 0 1px 1px#000;
+	box-shadow: 0 0 1px 1px #000;
+}
+
+#status img
+{
+	position:relative;
+}
+
+#status .locked
+{
+	top:1px;
+}
+
+#status .invalid
+{
+	display:none;
+	top:-2px;
+	left:-2px;
+}
+
+#status .loading
+{
+	display:none;
+	top:7px;
+}
+
+#status .unlocked
+{
+	display:none;
+	top:6px;
+}
+
+input[type=text], input[type=password] {
+	position: absolute;
+	border: none;
+	background: url(../../../image/management_images/login/input.png);
+	display: block;
+	height: 54px;
+	width: 319px;
+	padding: 0 10px;
+	font-size:16px;
+	color:rgba(0,0,0,0.7);
+	text-align:left;
+	text-shadow:0px 1px 0px rgba(255,255,255,0.28);
+	}
+
+input[type=text]:focus, input[type=password]:focus {
+	outline: none;
+	opacity: 1;
+	background-position: 0 -54px;
+}
+
+input[type=text]{
+	left: 30px;
+	top: 100px;
+}
+
+input[type=password]{
+	left: 30px;
+	top: 160px;
+}
+
+input[type=button], input[type=submit] {
+	background: url(../../../image/management_images/login/button.png) no-repeat;	
+	border: none;
+	display: block;
+	position: absolute;
+	top: 235px;
+	left: 95px;
+	width: 203px;
+	height: 44px;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	color: #333;
+	text-shadow:0px 1px 0px rgba(255,255,255,0.35);
+}
+
+input[type=button]:hover, input[type=submit]:hover{
+	background-position: 0 -44px;
+}
+
+input[type=button]:active, input[type=submit]:active{
+	background-position: 0 -88px;
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../style/dark-hive/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/jquery.jscrollpane.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/showLoading.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/prettyLoader.css"/>
+<link type="text/css" href="../../skins/jplayer/circle.skin/circle.player.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../style/management/audiogallery/management.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/management/audiogallery/container.css"/>
+<link rel="stylesheet" type="text/css" href="../../style/management/audiogallery/dialog.css"/>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../script/jquery-ui.js"></script>
+<script type="text/javascript" src="../../script/jquery-css-transform.js"></script>
+<script type="text/javascript" src="../../script/jquery-animate-css-rotate-scale.js"></script>
+<script type="text/javascript" src="../../script/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../script/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="../../script/jquery.showLoading.min.js"></script>
+<script type="text/javascript" src="../../script/jquery.prettyLoader.js"></script>
+<script type="text/javascript" src="../../script/jquery.transform2d.js"></script>
+<script type="text/javascript" src="../../script/jquery.grab.js"></script>
+<script type="text/javascript" src="../../script/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="../../script/mod.csstransforms.min.js"></script>
+<script type="text/javascript" src="../../script/circle.player.js"></script>
+<script type="text/javascript" src="../../script/management/audiogallery/management.js"></script>
+<title>AUDIO GALLERY MANAGEMENT</title>
+</head>
+
+<body>
+<div id="header">
+  <div id="companylogo"> <img src="../../image/logo_images/logoleft.png" width="270" height="80"> </div>
+  <div id="title">
+    <div id="logo"><img src="../../image/management_images/management/gear2.png" width="70" height="70"></div>
+    <p>CONTROL PANEL</p>
+  </div>
+  <div id="user">
+    <div id="userinfo">
+      <p><span class="highlight">Welcome </span><span id="name"></span></p>
+      <span class="highlight">Logged in as </span><br>
+      <span id="username"></span></div>
+    <div id="avatar"><img src="" width="70" height="70"></div>
+  </div>
+</div>
+<div id="modulepanel">
+  <div class="module" id="playlistaudiomodulebtn">
+    <div class="icon"><img src="../../image/management_images/management/ad.png" width="100" height="100"></div>
+    <p>Audios</p>
+  </div>
+  <div class="module" id="usersmodulebtn">
+    <div class="icon"><img src="../../image/management_images/management/user.png" width="100" height="100"></div>
+    <p>Users</p>
+  </div>
+  <div class="module" id="profilemodulebtn">
+    <div class="icon"><img src="../../image/management_images/management/profile.png" width="100" height="100"></div>
+    <p>Profile</p>
+  </div>
+  <div class="module" id="logoutbtn">
+    <div class="icon"><img src="../../image/management_images/management/connection.png" width="100" height="100"></div>
+    <p>Sign Out</p>
+  </div>
+</div>
+
+<div id="playlistaudiomodule_playlist">
+    <div class="container">
+      <div id="topbar" class="bar">
+        <div class="icon"><img src="../../image/management_images/management/ad.png" width="40" height="40"></div>
+        <span class="heading">Playlists</span>
+        <div class="toolbox">
+          <div id="sortbtn" class="icon"><img src="../../image/management_images/management/sort.png" width="40" height="40"></div>
+          <div id="searchbtn" class="icon"><img src="../../image/management_images/management/search1.png" width="40" height="40"></div>
+        </div>
+      </div>
+      <div class="contentbox" id="itembox">
+        <!--<div class="item">
+          <div class="thumb"></div>
+          <div class="title">advert1</div>
+          <div class="minicommandbar">
+            <div class="minicommand icon-edit"></div>
+            <div class="minicommand icon-eye-open"></div>
+            <div class="minicommand icon-trash"></div>
+          </div>
+        </div>-->
+      </div>
+      <div id="bottombar" class="bar">
+        <div class="viewitemdialogbtn command">
+          <div class="icon-eye-open"></div>
+          View</div>
+        <div class="createitemdialogbtn command">
+          <div class="icon-plus-sign"></div>
+          Create</div>
+        <div class="edititemdialogbtn command">
+          <div class="icon-edit"></div>
+          Edit</div>
+        <div class="deleteitemdialogbtn command">
+          <div class="icon-trash"></div>
+          Delete</div>
+      </div>
+    </div>
+    
+    <div class="overlay"></div>
+    
+    <!--modal dialogs-->
+    <!--upload dialog-->
+    <div class="createdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">CREATE</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+        <div class="windowbtn minimizebtn icon-minus-sign"></div>
+      </div>
+      <div class="body">   
+      	<div class="element">
+          <label>NAME</label>
+          <input type="text" class="name" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>DESCRIPTION</label>
+          <input type="text" class="descriptiontext" placeholder="Fill up the field">
+        </div>
+        <div class="element thumbnail">
+          <label>THUMBNAIL</label>
+            <div class="fileinput">
+            <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+              <div class="progress">
+                <div class="progressbar"></div>
+              </div>
+            </div>
+            <div class="browsebtn">
+              <div class="icon-file"></div>
+              <input type="file" name="file">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar commandbar">
+        <div class="status"></div>
+        <div class="createbtn button"><span class="icon-plus-sign"> </span> CREATE</div>
+        <!--<div class="cancelbtn button"><span class="icon-remove-sign"> </span> CANCEL</div>-->
+      </div>
+    </div>
+    <!--upload dialog end-->
+    
+    <!-- edit dialog begin -->
+    <div class="editdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">EDIT</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+        <div class="windowbtn minimizebtn icon-minus-sign"></div>
+      </div>
+      <div class="body">
+      	<input type="hidden" class="element id">
+      	<div class="element">
+          <label>NAME</label>
+          <input type="text" class="name" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>DESCRIPTION</label>
+          <input type="text" class="description" placeholder="Fill up the field">
+        </div>
+        <div class="element thumbnail">
+          <label>THUMBNAIL</label>
+            <div class="fileinput">
+            <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+              <div class="progress">
+                <div class="progressbar"></div>
+              </div>
+            </div>
+            <div class="browsebtn">
+              <div class="icon-file"></div>
+              <input type="file" name="file">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar commandbar">
+        <div class="status"></div>
+        <div class="editbtn button"><span class="icon-plus-sign"> </span> EDIT</div>
+        <!--<div class="cancelbtn button"><span class="icon-remove-sign"> </span> CANCEL</div>-->
+      </div>
+    </div>
+    <!-- edit dialog end -->
+    
+    <!--view dialog-->
+    <div class="viewdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">VIEW</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+      </div>
+      <div class="body">
+      	<div class="element thumb">
+          <img src="" width="164" height="123" />
+        </div>
+        <div class="element name">
+          <label>NAME : </label><label></label>
+        </div> 
+        <div class="element description">
+          <label>DESCRIPTION : </label><label></label>
+        </div>
+      </div>
+    </div>
+    <!--view dialog end-->
+    <!--modal dialogs end-->
+</div>
+
+<div id="playlistaudiomodule_audio">
+    <div class="container">
+      <div id="topbar" class="bar">
+        <div class="icon"><img src="../../image/management_images/management/ad.png" width="40" height="40"></div>
+        <span class="heading">Audios</span>
+        <div class="moduletitle"></div>
+        <div class="toolbox">
+          <div id="sortbtn" class="icon"><img src="../../image/management_images/management/sort.png" width="40" height="40"></div>
+          <div id="searchbtn" class="icon"><img src="../../image/management_images/management/search1.png" width="40" height="40"></div>
+        </div>
+      </div>
+      <div class="contentbox" id="itembox">
+        <!--<div class="item">
+          <div class="thumb"></div>
+          <div class="title">advert1</div>
+          <div class="minicommandbar">
+            <div class="minicommand icon-edit"></div>
+            <div class="minicommand icon-eye-open"></div>
+            <div class="minicommand icon-trash"></div>
+          </div>
+        </div>-->
+      </div>
+      <div id="bottombar" class="bar">
+        <div class="viewitemdialogbtn command">
+          <div class="icon-eye-open"></div>
+          View</div>
+        <div class="createitemdialogbtn command">
+          <div class="icon-plus-sign"></div>
+          Create</div>
+        <div class="edititemdialogbtn command">
+          <div class="icon-edit"></div>
+          Edit</div>
+        <div class="deleteitemdialogbtn command">
+          <div class="icon-trash"></div>
+          Delete</div>
+      </div>
+    </div>
+    
+    <div class="overlay"></div>
+    
+    <!--modal dialogs-->
+    <!--upload dialog-->
+    <div class="createdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">CREATE</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+        <div class="windowbtn minimizebtn icon-minus-sign"></div>
+      </div>
+      <div class="body">
+        <div class="element">
+          <label>TITLE</label>
+          <input type="text" class="titletext" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>DESCRIPTION</label>
+          <input type="text" class="descriptiontext" placeholder="Fill up the field">
+        </div>
+        <div class="element item">
+          <label>FILE</label>
+          <div class="fileradioset">
+            <input type="radio" id="radio21" name="radio1" value="url" checked="checked" /><label for="radio21">URL</label>
+            <input type="radio" id="radio22" name="radio1" value="file" /><label for="radio22">FILE</label>
+        </div>
+            <input class="url" type="text" placeholder="Fill up the field">
+          <div class="fileinput">
+            <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+              <div class="progress">
+                <div class="progressbar"></div>
+              </div>
+            </div>
+            <div class="browsebtn">
+              <div class="icon-file"></div>
+              <input type="file" name="file">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar commandbar">
+        <div class="status"></div>
+        <div class="createbtn button"><span class="icon-plus-sign"> </span> CREATE</div>
+        <!--<div class="cancelbtn button"><span class="icon-remove-sign"> </span> CANCEL</div>-->
+      </div>
+    </div>
+    <!--upload dialog end-->
+    
+    <!--view dialog-->
+    <div class="viewdialog dialog" id="viewitemdialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">VIEW</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+      </div>
+      <div class="body">
+        <div class="audioview">
+			<div id="jquery_jplayer_1" class="cp-jplayer"></div>
+            <div id="cp_container_1" class="cp-container">
+				<div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+					<div class="cp-buffer-1"></div>
+					<div class="cp-buffer-2"></div>
+				</div>
+				<div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+					<div class="cp-progress-1"></div>
+					<div class="cp-progress-2"></div>
+				</div>
+				<div class="cp-circle-control"></div>
+				<ul class="cp-controls">
+					<li><a class="cp-play" tabindex="1">play</a></li>
+					<li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+				</ul>
+			</div>
+        </div>
+      </div>
+    </div>
+    <!--view dialog end-->
+    <!--modal dialogs end-->
+</div>
+
+<div id="usersmodule">
+    <div class="container">
+      <div id="topbar" class="bar">
+        <div class="icon"><img src="../../image/management_images/management/user.png" width="40" height="40"></div>
+        <span class="heading">Users</span>
+        <div class="toolbox">
+          <div id="sortbtn" class="icon"><img src="../../image/management_images/management/sort.png" width="40" height="40"></div>
+          <div id="searchbtn" class="icon"><img src="../../image/management_images/management/search1.png" width="40" height="40"></div>
+        </div>
+      </div>
+      <div class="contentbox" id="usersbox">
+        <!--<div class="item">
+          <div class="thumb"></div>
+          <div class="title">advert1</div>
+          <div class="minicommandbar">
+            <div class="minicommand icon-edit"></div>
+            <div class="minicommand icon-eye-open"></div>
+            <div class="minicommand icon-trash"></div>
+          </div>
+        </div>-->
+      </div>
+      <div id="bottombar" class="bar">
+        <div class="viewitemdialogbtn command">
+          <div class="icon-eye-open"></div>
+          View</div>
+        <div class="createitemdialogbtn command">
+          <div class="icon-plus-sign"></div>
+          Create</div>
+        <div class="edititemdialogbtn command">
+          <div class="icon-edit"></div>
+          Edit</div>
+        <div class="deleteitemdialogbtn command">
+          <div class="icon-trash"></div>
+          Delete</div>
+      </div>
+	</div>
+
+    
+    <div class="overlay"></div>
+    
+    <!--modal dialogs-->
+    <!--create dialog start-->
+    <div class="createdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">CREATE</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+        <div class="windowbtn minimizebtn icon-minus-sign"></div>
+      </div>
+      <div class="body">   
+      	<div class="element">
+          <label>NAME</label>
+          <input type="text" class="name" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>USERNAME</label>
+          <input type="text" class="username" placeholder="Fill up the field">
+        </div>     
+        <div class="element">
+          <label>PASSWORD</label>
+          <input type="text" class="password" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>DESCRIPTION</label>
+          <input type="text" class="descriptiontext" placeholder="Fill up the field">
+        </div>
+        <div class="element thumbnail">
+          <label>THUMBNAIL</label>
+            <div class="fileinput">
+            <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+              <div class="progress">
+                <div class="progressbar"></div>
+              </div>
+            </div>
+            <div class="browsebtn">
+              <div class="icon-file"></div>
+              <input type="file" name="file">
+            </div>
+          </div>
+        </div>
+        <div class="element">
+          <label>PRIVILAGE - CREATE PLAYLIST</label>
+          <input type="checkbox" class="privilage_createplaylist">
+        </div>
+        <div class="element">
+          <label>PRIVILAGE - CREATE AUDIO</label>
+          <input type="checkbox" class="privilage_createaudio">
+        </div> 
+        <div class="element">
+          <label>PRIVILAGE - UPLOAD AUDIO</label>
+          <input type="checkbox" class="privilage_uploadaudio">
+        </div> 
+        <div class="element">
+          <label>PRIVILAGE - MANAGE USERS</label>
+          <input type="checkbox" class="privilage_usermanagement">
+        </div> 
+        <div class="element">
+          <label>QUOTA - NUMBER OF AUDIOS</label>
+          <input type="text" class="quota_audio" placeholder="Fill up the field">
+        </div> 
+        <div class="element">
+          <label>QUOTA - MAXIMUM AUDIO SIZE</label>
+          <input type="text" class="quota_maxaudiosize" placeholder="Fill up the field">
+        </div>      
+      </div>
+      <div class="bar commandbar">
+        <div class="status"></div>
+        <div class="createbtn button"><span class="icon-plus-sign"> </span> CREATE</div>
+        <!--<div class="cancelbtn button"><span class="icon-remove-sign"> </span> CANCEL</div>-->
+      </div>
+    </div>
+    <!--create dialog end-->
+    
+    <!--edit dialog start-->
+    <div class="editdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">EDIT</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+        <div class="windowbtn minimizebtn icon-minus-sign"></div>
+      </div>
+      <div class="body">
+      	<input type="hidden" class="element id">
+      	<div class="element">
+          <label>NAME</label>
+          <input type="text" class="name" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>USERNAME</label>
+          <input type="text" class="username" placeholder="Fill up the field">
+        </div>     
+        <div class="element">
+          <label>PASSWORD</label>
+          <input type="text" class="password" placeholder="Fill up the field">
+        </div>
+        <div class="element">
+          <label>DESCRIPTION</label>
+          <input type="text" class="description" placeholder="Fill up the field">
+        </div>
+        <div class="element thumbnail">
+          <label>THUMBNAIL</label>
+            <div class="fileinput">
+            <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+              <div class="progress">
+                <div class="progressbar"></div>
+              </div>
+            </div>
+            <div class="browsebtn">
+              <div class="icon-file"></div>
+              <input type="file" name="file">
+            </div>
+          </div>
+        </div>
+        
+        <div class="element">
+          <label>PRIVILAGE - CREATE PLAYLIST</label>
+          <input type="checkbox" class="privilage_createplaylist">
+        </div>
+        <div class="element">
+          <label>PRIVILAGE - CREATE AUDIO</label>
+          <input type="checkbox" class="privilage_createaudio">
+        </div> 
+        <div class="element">
+          <label>PRIVILAGE - UPLOAD AUDIO</label>
+          <input type="checkbox" class="privilage_uploadaudio">
+        </div> 
+        <div class="element">
+          <label>PRIVILAGE - MANAGE USERS</label>
+          <input type="checkbox" class="privilage_usermanagement">
+        </div> 
+        <div class="element">
+          <label>QUOTA - NUMBER OF AUDIOS</label>
+          <input type="text" class="quota_audio" placeholder="Fill up the field">
+        </div> 
+        <div class="element">
+          <label>QUOTA - MAXIMUM AUDIO SIZE</label>
+          <input type="text" class="quota_maxaudiosize" placeholder="Fill up the field">
+        </div>
+      </div>
+      <div class="bar commandbar">
+        <div class="status"></div>
+        <div class="editbtn button"><span class="icon-plus-sign"> </span> EDIT</div>
+        <!--<div class="cancelbtn button"><span class="icon-remove-sign"> </span> CANCEL</div>-->
+      </div>
+    </div>
+    <!--edit dialog end-->
+    
+    <!--view dialog-->
+    <div class="viewdialog dialog">
+      <div class="bar titlebar">
+        <div class="icon icon-plus-sign"></div>
+        <span class="heading">VIEW</span>
+        <div class="windowbtn closebtn icon-remove-sign"></div>
+      </div>
+      <div class="body">
+      	<div class="element avatar">
+          <img src="" width="164" height="123" />
+        </div>
+        <div class="element username">
+          <label>USERNAME : </label><label></label>
+        </div>
+        <div class="element name">
+          <label>NAME : </label><label></label>
+        </div> 
+        <div class="element description">
+          <label>DESCRIPTION : </label><label></label>
+        </div>
+        <div class="element privilage_createplaylist">
+          <label>PRIVILAGE - CREATE PLAYLIST : </label><label></label>
+        </div> 
+        <div class="element privilage_createaudio">
+          <label>PRIVILAGE - CREATE AUDIO : </label><label></label>
+        </div> 
+        <div class="element privilage_uploadaudio">
+          <label>PRIVILAGE - UPLOAD AUDIO : </label><label></label>
+        </div> 
+        <div class="element privilage_usermanagement">
+          <label>PRIVILAGE - MANAGE USERS : </label><label></label>
+        </div> 
+        <div class="element quota_audio">
+          <label>QUOTA - NUMBER OF AUDIOS : </label><label></label>
+        </div> 
+        <div class="element quota_maxaudiosize">
+          <label>QUOTA - MAXIMUM AUDIO SIZE : </label><label></label>
+        </div> 
+      </div>
+    </div>
+    <!--view dialog end-->
+    <!--modal dialogs end-->
+</div>
+
+<div id="profilemodule">
+    <div class="container">
+      <div id="topbar" class="bar">
+        <div class="icon"><img src="../../image/management_images/management/profile.png" width="40" height="40"></div>
+        <span class="heading">Profile</span>
+        <!--<div class="toolbox">
+          <div id="sortbtn" class="icon"><img src="../../image/management_images/management/sort.png" width="40" height="40"></div>
+          <div id="searchbtn" class="icon"><img src="../../image/management_images/management/search1.png" width="40" height="40"></div>
+        </div>-->
+      </div>
+      <div class="contentbox" id="profilebox">
+        <div class='privilageinfo'>
+        	<div class='header'>
+            	PRIVILAGES
+            </div>
+        	<div class="body">
+                <div class="element privilage_createplaylist">
+                    <label>CREATE PLAYLIST</label>
+                    <div class="value"></div>
+                </div>
+                <div class="element privilage_createaudio">
+                    <label>CREATE AUDIO</label>
+                    <div class="value"></div>
+                </div>
+                <div class="element privilage_uploadaudio">
+                    <label>UPLOAD AUDIO</label>
+                    <div class="value"></div>
+                </div>
+                <div class="element privilage_usermanagement">
+                    <label>MANAGE USERS</label>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class='quotainfo'>        
+        	<div class='header'>
+            	QUOTA
+            </div>
+        	<div class="body">
+                <div class="element quota_audio">
+                    <label>NUMBER OF AUDIOS</label>
+                    <div class="value"></div>
+                </div>
+                <div class="element quota_maxaudiosize">
+                    <label>MAXIMUM AUDIO SIZE</label>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class='userinfo'>
+        	<div class='header'>
+            	USER INFORMATION
+            </div>
+        	<div class="body">
+                <div class="element name">
+                  <label>NAME</label>
+                  <input type="text" class="value" placeholder="Fill up the field">
+                </div>
+                <div class="element username">
+                  <label>USERNAME</label>
+                  <input type="text" class="value" placeholder="Fill up the field">
+                </div>     
+                <div class="element password">
+                  <label>PASSWORD</label>
+                  <input type="password" class="value" placeholder="Fill up the field">
+                </div>
+                <div class="element description">
+                  <label>DESCRIPTION</label>
+                  <input type="text" class="value" placeholder="Fill up the field">
+                </div>
+                <div class="element thumbnail">
+                  <label>THUMBNAIL</label>
+                    <div class="fileinput">
+                    <div class="file"><div class="filename"></div><span class="filesize"></span><span class="percentage"></span>
+                      <div class="progress">
+                        <div class="progressbar"></div>
+                      </div>
+                    </div>
+                    <div class="browsebtn">
+                      <div class="icon-file"></div>
+                      <input type="file" name="file">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="bar commandbar">
+                <div class="status"></div>
+                <div class="editbtn button">EDIT</div>
+                <!--<div class="cancelbtn button">CANCEL</div>-->
+            </div>
+        </div>
+      </div>
+      <div id="bottombar" class="bar">        
+      </div>
+	</div>    
+</div>
+
+<img id="cursor" src="../../image/management_images/cursor.png">
+
+<div id="footer">
+  <p>DEVELOPED BY <a href="http://robinrizvi.info" style="text-decoration: none !important;color:#FFF">ROBIN RIZVI</a> © 2012</p>
+</div>
+</body>
+</html>

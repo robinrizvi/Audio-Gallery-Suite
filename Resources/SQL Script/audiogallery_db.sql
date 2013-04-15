@@ -32,6 +32,7 @@ CREATE TABLE `audio` (
   `title` varchar(100) NOT NULL,
   `description` varchar(500) DEFAULT NULL,
   `playlist_id` bigint(20) unsigned NOT NULL,
+  `type` enum('url','file') NOT NULL DEFAULT 'file',
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniqueindex` (`name`,`playlist_id`),
   UNIQUE KEY `unique_title_playlist` (`title`,`playlist_id`) USING BTREE,
@@ -73,6 +74,52 @@ CREATE TABLE `playlist` (
 
 
 --
+-- Definition of table `privilage`
+--
+
+DROP TABLE IF EXISTS `privilage`;
+CREATE TABLE `privilage` (
+  `user_id` smallint(5) unsigned NOT NULL,
+  `usermanagement` tinyint(1) DEFAULT '1',
+  `uploadaudio` tinyint(1) DEFAULT '1',
+  `createaudio` tinyint(1) DEFAULT '1',
+  `createplaylist` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`user_id`) USING BTREE,
+  CONSTRAINT `FK_privilage_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `privilage`
+--
+
+/*!40000 ALTER TABLE `privilage` DISABLE KEYS */;
+INSERT INTO `privilage` (`user_id`,`usermanagement`,`uploadaudio`,`createaudio`,`createplaylist`) VALUES (0,1,1,1,1);
+ 
+ 
+
+--
+-- Definition of table `quota`
+--
+
+DROP TABLE IF EXISTS `quota`;
+CREATE TABLE `quota` (
+  `user_id` smallint(5) unsigned NOT NULL,
+  `audio` int(10) unsigned NOT NULL DEFAULT '10000',
+  `maxaudiosize` bigint(20) unsigned NOT NULL DEFAULT '1073741824',
+  PRIMARY KEY (`user_id`),
+  CONSTRAINT `quotaofuser` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `quota`
+--
+
+/*!40000 ALTER TABLE `quota` DISABLE KEYS */;
+INSERT INTO `quota` (`user_id`,`audio`,`maxaudiosize`) VALUES (0,10,20000000);
+ 
+ 
+
+--
 -- Definition of table `settings`
 --
 
@@ -104,6 +151,8 @@ CREATE TABLE `user` (
   `password` varchar(100) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
   `description` varchar(200) DEFAULT NULL,
+  `avatar` varchar(100) NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniqueindex` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -113,8 +162,8 @@ CREATE TABLE `user` (
 --
 
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id`,`username`,`password`,`name`,`description`) VALUES 
- (0,'superuser','superuser','Super User','Superuser that creates and manages other users and can also create also create and manage his own playlists and audios');
+INSERT INTO `user` (`id`,`username`,`password`,`name`,`description`,`avatar`,`active`) VALUES 
+ (0,'superuser','superuser','Super User','Superuser that creates and manages other users and can also create also create and manage his own playlists and audios','user.png',1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 
