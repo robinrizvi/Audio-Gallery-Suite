@@ -1,9 +1,9 @@
 ABOUT
 Audio-Gallery-Suite is a complete audio gallery solution made with HTML5/CSS3/Jquery-JS/PHP-ajax/C# that includes a web audio gallery and a software (both web and windows based) for managing the web audio gallery.
 
-DEMOS (not updated)
+DEMOS (updated)
 http://projects.robinrizvi.info/audio-gallery-suite/
-http://projects.robinrizvi.info/audio-gallery-suite/software/audiogallery_setup.zip
+http://projects.robinrizvi.info/audio-gallery-suite/management/audiogallery/login.html
 
 Gallery Management
 Windows based software (deprecated)
@@ -24,15 +24,17 @@ https://github.com/robinrizvi/Audio-Gallery-Suite/archive/master.zip
 i) audiogallery_db.sql
 ii) create_user_[optional].sql
 
-3) Copy/upload the Gallery folder from the zip to your server where-ever you want
+3. Configure Gallery/php/config.php if the there are any changes to the database or the database user other than the default ones assumed.
 
-4) Go to http://your_domain_url/Gallery/management/audiogallery/login.html
+3) Copy/upload the contents of Gallery folder from the zip to your server where-ever you want
 
-5) type superuser and superuser as username and password respectively
+4) Go to http://root_url_to_gallery_folder/management/audiogallery/login.html
+
+5) Type superuser and superuser as username and password respectively
 
 6) Add playlist and add audios under that playlist
 
-7) Go to your http://your_url/Gallery/index.html to view your gallery
+7) Go to your http://root_url_to_gallery_folder/index.html to view your gallery
  
 AUTHOR
 Robin Rizvi
