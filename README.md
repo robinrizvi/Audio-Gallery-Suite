@@ -9,10 +9,10 @@ DEMOS
 
 Gallery Management  
 -------------  
-> **Windows based software (Deprecated) : **
+**Windows based software (Deprecated) : **
 The windows based software that was earlier used to manage the audio gallery suite (CRUD management for playlists and audios) has not been tested with the latest commits made and may or may not fucntion correctly.
 
-> **Web based application (Recommended) : **
+**Web based application (Recommended) : **
 A web based management panel (named as Gallardmin) has been added. **Gallardmin** is a web based gallery management module that helps in management of the audio gallery suite using a web based interface. It uses the latest web technologies and a cleaner intuitive interface.
 
 USAGE (includes usage instructions for setup of Audio-Gallery-Suite using Gallardmin-web based management interface only)
