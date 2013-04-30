@@ -4,6 +4,7 @@ ABOUT
 
 DEMOS
 -------------
+Watch video demonstration on youtube <http://youtu.be/IEB4hLtcTiU>  
 <http://projects.robinrizvi.info/audio-gallery-suite/>  
 <http://projects.robinrizvi.info/audio-gallery-suite/management/audiogallery/login.html>
 
