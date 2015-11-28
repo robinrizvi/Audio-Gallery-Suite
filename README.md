@@ -25,7 +25,6 @@ USAGE (includes usage instructions for setup of Audio-Gallery-Suite using Gallar
     1. **audiogallery_db.sql**
     2. **create_user_[optional].sql**  
                                               
-     
 3. Configure **Gallery/php/config.php** if the there are any changes to the database or the database user other than the default ones assumed.
 
 4. **Copy/upload the contents of Gallery folder** from the zip to your server where-ever you want
