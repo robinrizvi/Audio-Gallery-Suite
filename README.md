@@ -45,9 +45,9 @@ CODE DESCRIPTION
 AUTHOR
 -------------
 **Robin Rizvi**  
-**Email**: <mail@robinrizvi.info>  
-**Website**: <http://robinrizvi.info/>  
-**Blog**: <http://blog.robinrizvi.info>
+**Email**: <robin.rizvi@gmail.com>  
+**Website**: <https://in.linkedin.com/in/robinrizvi/>  
+**Blog**: <http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=6849819>
 
 CREDITS
 -------------
